@@ -1,0 +1,52 @@
+{
+	"extends": [
+		"next/core-web-vitals",
+		"next/typescript",
+		"next",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended",
+		"prettier"
+	],
+	"parser": "@typescript-eslint/parser",
+	"rules": {
+		"@typescript-eslint/no-explicit-any": "error",
+		"react/jsx-no-useless-fragment": "off",
+		"import/prefer-default-export": "off",
+		"react/jsx-props-no-spreading": "off",
+		"no-empty": [
+			"error",
+			{
+				"allowEmptyCatch": true
+			}
+		],
+		"react/jsx-no-bind": "off",
+		"react/react-in-jsx-scope": "off",
+		"import/order": [
+			"error",
+			{
+				"groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				},
+				"newlines-between": "always"
+			}
+		],
+		"react/require-default-props": "off",
+		"no-shadow": "off",
+		"react/no-array-index-key": "off",
+		"consistent-return": "off",
+		"jsx-a11y/label-has-associated-control": [
+			"error",
+			{
+				"assert": "either"
+			}
+		],
+		"jsx-a11y/control-has-associated-label": [
+			"error",
+			{
+				"ignoreElements": ["td", "tr"]
+			}
+		]
+	}
+}

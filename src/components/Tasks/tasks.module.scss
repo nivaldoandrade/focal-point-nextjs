@@ -1,0 +1,64 @@
+.tasks {
+	align-self: stretch;
+
+	h2 {
+		text-align: center;
+		font-size: 1rem;
+		font-weight: 400;
+		color: var(--dark-gray);
+		line-height: normal;
+		letter-spacing: -0.02rem;
+
+		padding-bottom: 1.5rem;
+	}
+}
+
+.listContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: 1px dashed var(--gray);
+
+	&:hover {
+		background-color: var(--bright-white);
+		cursor: pointer;
+		transition: 0.2s ease-out;
+		border: 1px dashed var(--bright-white);
+	}
+
+	span {
+		flex: 1;
+
+		&.checked {
+			color: var(--dark-gray);
+			text-decoration: line-through;
+		}
+	}
+
+	button {
+		width: 1.5rem;
+		height: 1.5rem;
+		z-index: 1;
+		background: transparent;
+		font-size: 0;
+		border: 0;
+
+		&:hover {
+			svg {
+				& > path {
+					transition: all 0.2s ease-out;
+					stroke: var(--dark-gray);
+				}
+			}
+		}
+	}
+}
