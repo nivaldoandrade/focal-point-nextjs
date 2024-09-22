@@ -1,3 +1,5 @@
+'use client';
+
 import LogoMark from '@/public/Logomark.svg';
 import LogoType from '@/public/Logotype.svg';
 import { capitalizeWeekday } from '@/utils/formatDate';
