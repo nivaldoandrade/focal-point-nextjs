@@ -21,18 +21,6 @@
 	margin: 0;
 }
 
-@media (max-width: 1080px) {
-	html {
-		font-size: 93.75%; //15px
-	}
-}
-
-@media (max-width: 753px) {
-	html {
-		font-size: 87.5%; //14px
-	}
-}
-
 body {
 	color: var(--black);
 	background: var(--background);
